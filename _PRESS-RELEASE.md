@@ -1,4 +1,4 @@
-# Project Name #
+# Project Name Tech Hot or Not
 
 <!-- 
 > This material was originally posted [here](http://www.quora.com/What-is-Amazons-approach-to-product-development-and-product-management). It is reproduced here for posterities sake.
@@ -19,26 +19,46 @@ Once the project moves into development, the press release can be used as a touc
 ## Heading ##
   > Name the product in a way the reader (i.e. your target customers) will understand.
 
+  >> It is a decision website to analyze the preferences of Developers to certain frameworks / technologies
+
+
 ## Sub-Heading ##
   > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
+
+  >> It is on one side entertaining but on the other one can see if one is interested in the current hot technologies or if one is
+  >> lagging behind the hot stuff
 
 ## Summary ##
   > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
 
+  >> A simple tool to show you if you are interested in the hot web tech stacks of nowadays or if you are lagging behind
+
 ## Problem ##
   > Describe the problem your product solves.
+
+  >> self analysis of developers, also shows whats hot out there and might be of interest
 
 ## Solution ##
   > Describe how your product elegantly solves the problem.
 
+  >> simple binary decision making is straight forward and entertaining
+
 ## Quote from You ##
   > A quote from a spokesperson in your company.
+
+  >> 'awesome shit' - Guy Thomas
 
 ## How to Get Started ##
   > Describe how easy it is to get started.
 
+  >> create a simple website that shows clickable options for every part of the Software (i.e. Backend, Frontend, DB etc.)
+
 ## Customer Quote ##
   > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
 
+  >> "Thanks to Tech Hot or Not I found out that I should try MongoDB instead of sticking to SQL everytime"
+
 ## Closing and Call to Action ##
   > Wrap it up and give pointers where the reader should go next.
+
+  >> 
