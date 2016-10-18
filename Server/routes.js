@@ -14,13 +14,13 @@ module.exports = function(app, express) {
   };
 
   // app.get('/signup', handler.);
-  // app.post('/signup', handler.);
+  app.post('/signup', handler.signUpUser);
 
-  // app.get('/login', handler.);
-  // app.post('/login', handler.);
+  app.post('/login', handler.loginUser);
+  app.get('/logout', handler.logoutUser);
 
   app.get('/data', handler.fetchAll);
-  app.post('/voting/', handler.registerLike);
+  app.post('/voting/*', handler.registerLike);
 
   // app.get('/voting/language',  restrict, handler.);
   // app.post('/voting/language', restrict, handler.);
@@ -39,7 +39,4 @@ module.exports = function(app, express) {
 
   // app.get('/ranking', handler.);
 
-  app.get('/*', function(req,res){
-    res.redirect('/');
-  });
 };
