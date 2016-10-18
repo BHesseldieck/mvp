@@ -1,6 +1,7 @@
 angular.module('THON.factory', [])
 
 .factory('Data', function ($http) {
+  var techData;
   // Simple GET request example:
   var getAll = function() {
     return $http({
@@ -8,6 +9,7 @@ angular.module('THON.factory', [])
       url: '/data'
     })
     .then(function successCallback(response) {
+      techData = response.data;
       return response.data;
     }, function errorCallback(response) {
       // called asynchronously if an error occurs
@@ -32,9 +34,14 @@ angular.module('THON.factory', [])
     });
   };
 
+  var getTechData = function() {
+    return techData;
+  };
+
   return {
     getAll: getAll,
-    addOne: addOne
+    addOne: addOne,
+    getTechData: getTechData,
   };
 })
 

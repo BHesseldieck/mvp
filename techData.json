@@ -1,0 +1,32 @@
+[
+	{
+		"name": "Ruby",
+		"imageSrc": "abc",
+		"category": "languages",
+		"likes": 0,
+	},
+	{
+		"name": "JavaScript",
+		"imageSrc": "abc",
+		"category": "languages",
+		"likes": 0,
+	},
+	{
+		"name": "Java",
+		"imageSrc": "abc",
+		"category": "languages",
+		"likes": 0,
+	},
+	{
+		"name": "Python",
+		"imageSrc": "abc",
+		"category": "languages",
+		"likes": 0,
+	},
+	{
+		"name": "Go",
+		"imageSrc": "abc",
+		"category": "languages",
+		"likes": 0,
+	},
+]

@@ -1,0 +1,20 @@
+<div id='container'>
+  <div class='navigation'>
+    <a ui-sref="login" ui-sref-active="active">login</a>
+    <a ui-sref="signup" ui-sref-active="active">signup</a>
+    <a ui-sref="start" ui-sref-active="active">start</a>
+    <!-- <a href='/logout' class='logout'>Logout</a> -->
+  </div>
+  <div>
+    <button ui-sref='backend'>continue</button>
+    <div ng-model='LCtrl.data' ng-repeat="tech in LCtrl.data.technologies | orderBy: 'likes' : true" >
+      <img src={tech.imageSrc}/>
+      <p>{{tech}}</p>
+      <div class='info'>
+        <div class='likes'><span class='count'>{{tech.likes}}</span> Likes</div>
+        <div class='name'>{{tech.name}}</div>
+        <div class='category'>{{tech.category}}</div>
+      </div>    
+    </div>
+  </div>
+</div>

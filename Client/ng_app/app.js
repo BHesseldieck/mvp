@@ -2,12 +2,12 @@ angular.module('THON', [
   'THON.factory',
   'THON.start',
   'THON.auth',
+  'THON.languages',
   'ui.router',
 ])
 
 
 .config(function($stateProvider, $urlRouterProvider) {
-  $urlRouterProvider.otherwise('/start');
 
   var startState = {
     name: 'start',
@@ -23,7 +23,7 @@ angular.module('THON', [
   };
 
   var loginState = {
-    name: 'Login',
+    name: 'login',
     url: '/login',
     controller: 'AuthCtrl',
     controllerAs: 'ACtrl',
@@ -31,7 +31,7 @@ angular.module('THON', [
   };
 
   var signupState = {
-    name: 'Signup',
+    name: 'signup',
     url: '/signup',
     controller: 'AuthCtrl',
     controllerAs: 'ACtrl',
@@ -42,6 +42,7 @@ angular.module('THON', [
     name: 'languages',
     url: '/vote/languages',
     controller: 'LanguagesCtrl',
+    controllerAs: 'LCtrl',
     templateUrl: '/ng_app/languages/languages.html'
   };
 
@@ -67,6 +68,7 @@ angular.module('THON', [
   };
 
 
+  $urlRouterProvider.otherwise('/start');
 
   $stateProvider.state(startState);
   $stateProvider.state(loginState);
