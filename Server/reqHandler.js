@@ -14,10 +14,13 @@ exports.fetchAll = function(req, res){
 }
 
 exports.registerLike = function(req, res){
-	var newLikes = req.body.likes + 1;
-	Technologies.findOneAndUpdate({name: req.body.name}, {$set: {likes: newLikes}}, {new: true}, function(err, newObj){
-		console.log(newObj);
-	});
+	Technologies.findOne({name: req.body.name}).then(function(result){
+		console.log(result);
+		Technologies.findOneAndUpdate({name: req.body.name}, {$set: {likes: result.likes + 1}}, {new: true}, function(err, newObj){
+			console.log(newObj);
+			res.status(200).json(newObj);
+		});
+	})
 }
 
 exports.loginUser = function(req,res){
