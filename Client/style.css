@@ -47,11 +47,6 @@ a {
 	margin: auto;
 }
 
-button {
-	text-align: center;
-	margin: auto;
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -145,6 +140,7 @@ h1 {
 }
 
 .btn {
+  display:block;
   border-radius: 28px;
   font-family: Courier New;
   color: #ffffff;
@@ -152,7 +148,7 @@ h1 {
   background: #34d95a;
   padding: 20px 40px 20px 40px;
   text-decoration: none;
-  margin-left: 550px;
+  margin: auto;
   margin-top: 90px;
   text-align: center;
   position: relative;
