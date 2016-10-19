@@ -19,46 +19,51 @@ Once the project moves into development, the press release can be used as a touc
 ## Heading ##
   > Name the product in a way the reader (i.e. your target customers) will understand.
 
-  >> It is a decision website to analyze the preferences of Developers to certain frameworks / technologies
+  >> It is a small website to analyze the preferences of Developers about certain frameworks / technologies
 
 
 ## Sub-Heading ##
   > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
 
-  >> It is on one side entertaining but on the other one can see if one is interested in the current hot technologies or if one is
-  >> lagging behind the hot stuff
+  >> One can see if the user is interested in the current hot technologies or if he is
+  >> lagging behind the hot stuff, maybe it gives the user some inspiration on what to checkout.
 
 ## Summary ##
   > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
 
-  >> A simple tool to show you if you are interested in the hot web tech stacks of nowadays or if you are lagging behind
+  >> A simple tool to show you if you are interested in the hot web tech stacks of nowadays or if you rather prefer technologies
+  >> who don't get much of attention by the community. But maybe you'll get some inspiration from the ranking what to test on 
+  >> your next project.
 
 ## Problem ##
   > Describe the problem your product solves.
 
-  >> self analysis of developers, also shows whats hot out there and might be of interest
+  >> Tech-Stack self analysis for developers, also shows whats hot out there and might be of interest.
 
 ## Solution ##
   > Describe how your product elegantly solves the problem.
 
-  >> simple binary decision making is straight forward and entertaining
+  >> simple decision making between the frameworks / technologies, it is straight forward and for some also entertaining
 
 ## Quote from You ##
   > A quote from a spokesperson in your company.
 
-  >> 'awesome shit' - Guy Thomas
+  >> 'awesome thing' - Guy Thomas
 
 ## How to Get Started ##
   > Describe how easy it is to get started.
 
-  >> create a simple website that shows clickable options for every part of the Software (i.e. Backend, Frontend, DB etc.)
+  >> create a simple website that shows clickable options for every part of the Software (i.e. Language, Backend, Frontend, DB etc.)
+  >> simple mongoDB that stores the clicks on the technologies
+  >> server just needs to handle a static, two get and three post routes
 
 ## Customer Quote ##
   > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
 
-  >> "Thanks to Tech Hot or Not I found out that I should try MongoDB instead of sticking to SQL everytime"
+  >> "Through Tech Hot or Not I found out that I should try MongoDB instead of sticking to SQL everytime, also Elixir & Phoenix seems
+  >> to get a lot of attention by the community, maybe I'll give it a try on my next project."
 
 ## Closing and Call to Action ##
   > Wrap it up and give pointers where the reader should go next.
 
-  >> 
+  >> Simply clone the repo, start the server and you can already start voting for your favorite technology!
