@@ -9,7 +9,18 @@
     </head>
     <body ng-app='THON'>
         <h1>Tech Hot Or Not</h1>
-        <p>Here comes my app</p>
+
+        <header>
+            <div class="nav">
+              <ul>
+                <li class="home"><a ui-sref="login" >Login</a></li>
+                <li class="tutorials"><a ui-sref="signup">Signup</a></li>
+                <li class="about"><a ui-sref="start">Start</a></li>
+<!--                 <li class="news"><a ui-sref="signup">Newsletter</a></li>
+                <li class="contact"><a ui-sref="signup">Contact</a></li> -->
+              </ul>
+            </div>
+        </header>
         
         <div ui-view></div>
 
@@ -21,7 +32,9 @@
 <!--             // <script src="ng_app/backend/backend.js"></script>
         // <script src="ng_app/db/db.js"></script>
         // <script src="ng_app/frontend/frontend.js"></script> -->
-        <script src="ng_app/languages/languages.js"></script> 
+        <script src="ng_app/backend/backend.js"></script> 
+        <script src="ng_app/languages/languages.js"></script>
+        <script src="ng_app/ranking/ranking.js"></script>  
         <script src="ng_app/services/factory.js"></script>
         <script src="ng_app/app.js"></script>
     </body>

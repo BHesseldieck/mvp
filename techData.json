@@ -1,32 +1,51 @@
-[
-	{
-		"name": "Ruby",
-		"imageSrc": "abc",
-		"category": "languages",
-		"likes": 0,
-	},
-	{
-		"name": "JavaScript",
-		"imageSrc": "abc",
-		"category": "languages",
-		"likes": 0,
-	},
-	{
-		"name": "Java",
-		"imageSrc": "abc",
-		"category": "languages",
-		"likes": 0,
-	},
-	{
-		"name": "Python",
-		"imageSrc": "abc",
-		"category": "languages",
-		"likes": 0,
-	},
-	{
-		"name": "Go",
-		"imageSrc": "abc",
-		"category": "languages",
-		"likes": 0,
-	},
-]
+[{
+	"name": "Ruby",
+	"imageSrc": "/images/Ruby-language.png",
+	"category": "languages",
+	"likes": 0
+}, {
+	"name": "JavaScript",
+	"imageSrc": "/images/JavaScript_logo.png",
+	"category": "languages",
+	"likes": 0
+}, {
+	"name": "Java",
+	"imageSrc": "/images/Java-logo.jpg",
+	"category": "languages",
+	"likes": 0
+}, {
+	"name": "Python",
+	"imageSrc": "/images/python_logo.jpg",
+	"category": "languages",
+	"likes": 0
+}, {
+	"name": "Erlang",
+	"imageSrc": "/images/Erlang_logo.png",
+	"category": "languages",
+	"likes": 0
+}, {
+	"name": "Rails",
+	"imageSrc": "/images/rails_logo.jpeg",
+	"category": "backend",
+	"likes": 0
+}, {
+	"name": "Node.js",
+	"imageSrc": "/images/node_logo.png",
+	"category": "backend",
+	"likes": 0
+}, {
+	"name": "Spring",
+	"imageSrc": "/images/spring_logo.jpeg",
+	"category": "backend",
+	"likes": 0
+}, {
+	"name": "Django",
+	"imageSrc": "/images/django_logo.png",
+	"category": "backend",
+	"likes": 0
+}, {
+	"name": "Phoenix",
+	"imageSrc": "/images/phoenix_logo.png",
+	"category": "backend",
+	"likes": 0
+}]

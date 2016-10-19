@@ -1,8 +1,8 @@
 <div id='container'>
-  <div>
-    <button ui-sref='ranking'>skip</button>
-    <div ng-model='BCtrl.data' ng-repeat="tech in BCtrl.data.technologies" class="techItem">
-      <img class="logo" src={{tech.imageSrc}} ng-click="BCtrl.sendClick(tech)" />
+  <div ng-repeat="(key, value) in RCtrl.data">
+    <p class="rankingtitle">{{key}}:</p>
+    <div ng-model='RCtrl.data' ng-repeat="tech in RCtrl.data[key] | orderBy: 'likes' : true" class="techItem">
+      <img class="logo" src={{tech.imageSrc}} />
       <div class='info'>
         <div class='name'>{{tech.name}}</div>
         <div class='category'>{{tech.category}}</div>

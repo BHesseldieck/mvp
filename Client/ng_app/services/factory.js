@@ -18,11 +18,11 @@ angular.module('THON.factory', [])
     });
   };
 
-  var addOne = function(urlObj) {
+  var registerLike = function(techObj) {
     return $http({
       method: 'POST',
-      url: '/vote',
-      data: JSON.stringify(urlObj)
+      url: '/voting/',
+      data: JSON.stringify(techObj)
     }).then(function successCallback(response) {
         // this callback will be called asynchronously
         // when the response is available
@@ -40,7 +40,7 @@ angular.module('THON.factory', [])
 
   return {
     getAll: getAll,
-    addOne: addOne,
+    registerLike: registerLike,
     getTechData: getTechData,
   };
 })

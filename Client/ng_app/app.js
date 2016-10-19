@@ -3,6 +3,8 @@ angular.module('THON', [
   'THON.start',
   'THON.auth',
   'THON.languages',
+  'THON.backend',
+  'THON.ranking',
   'ui.router',
 ])
 
@@ -43,13 +45,14 @@ angular.module('THON', [
     url: '/vote/languages',
     controller: 'LanguagesCtrl',
     controllerAs: 'LCtrl',
-    templateUrl: '/ng_app/languages/languages.html'
+    templateUrl: '/ng_app/languages/languages.html',
   };
 
   var backendState = {
     name: 'backend',
     url: '/vote/backend',
     controller: 'BackendCtrl',
+    controllerAs: 'BCtrl',
     templateUrl: '/ng_app/backend/backend.html'
   };
 
@@ -67,6 +70,19 @@ angular.module('THON', [
     templateUrl: '/ng_app/frontend/frontend.html'
   };
 
+  var rankingState = {
+    name: 'ranking',
+    url: '/ranking',
+    controller: 'RankingCtrl',
+    controllerAs: 'RCtrl',
+    templateUrl: '/ng_app/ranking/ranking.html',
+    resolve: {
+      resolveData: function(Data) {
+        return Data.getAll();
+      }
+    }
+  };
+
 
   $urlRouterProvider.otherwise('/start');
 
@@ -77,6 +93,7 @@ angular.module('THON', [
   $stateProvider.state(backendState);
   $stateProvider.state(dbState);
   $stateProvider.state(frontendState);
+  $stateProvider.state(rankingState);
 });
 
 // .run(['$state', function ($state) { console.log('ui-router state changed') }])
