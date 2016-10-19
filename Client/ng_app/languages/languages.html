@@ -1,11 +1,9 @@
 <div id='container'>
   <div>
-    <button ui-sref='backend'>skip</button>
     <div ng-model='LCtrl.data' ng-repeat="tech in LCtrl.data.technologies" class="techItem">
       <img class="logo" src={{tech.imageSrc}} ng-click="LCtrl.sendClick(tech)" />
       <div class='info'>
         <div class='name'>{{tech.name}}</div>
-        <div class='category'>{{tech.category}}</div>
         <div class='likes'><span class='count'>{{tech.likes}}</span> Likes</div>
       </div>    
     </div>

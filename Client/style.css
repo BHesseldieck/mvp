@@ -9,8 +9,28 @@
 
 .techItem {
 	display: inline-block;
-	margin: 33px;
+	margin: 30px;
 	
+}
+
+#login {
+	font-size: 40px;
+	padding: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+#signup {
+	font-size: 40px;
+	padding: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.help-block {
+	font-size: 20px;
 }
 
 .logo {
@@ -102,10 +122,43 @@ body {
   */
 }
 
+.name {
+	display: inline-block;
+    font-size: 20px;
+    position: relative;
+    margin-top: 15px;
+}
+
+.likes {
+	display: inline-block;
+    margin-left: 80px;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
 h1 {
 	font-size: 60px;
 	padding: 20px;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
+}
+
+.btn {
+  border-radius: 28px;
+  font-family: Courier New;
+  color: #ffffff;
+  font-size: 37px;
+  background: #34d95a;
+  padding: 20px 40px 20px 40px;
+  text-decoration: none;
+  margin-left: 550px;
+  margin-top: 90px;
+  text-align: center;
+  position: relative;
+}
+
+.btn:hover {
+  background: #3cfc3c;
+  text-decoration: none;
 }
